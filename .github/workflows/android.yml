@@ -23,9 +23,7 @@ jobs:
           pip install --upgrade pip
           pip install buildozer cython
 
-      - name: Build APK
-        run: |
-          buildozer init || true  # إذا لم يكن هناك buildozer.spec
+     
           buildozer -v android debug
 
       - name: Upload APK Artifact
