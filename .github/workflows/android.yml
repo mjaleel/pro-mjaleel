@@ -38,9 +38,7 @@ jobs:
     - name: Install Android Build Tools
       run: sdkmanager "build-tools;36.0.0"
 
-    - name: Build APK
-      run: |
-        buildozer android debug
+    
 
     - name: Upload APK
       uses: actions/upload-artifact@v4
